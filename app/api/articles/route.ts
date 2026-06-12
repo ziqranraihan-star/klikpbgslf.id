@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { getServerSession } from 'next-auth';
+import { revalidatePath } from 'next/cache';
 import { prisma } from '../../../lib/prisma';
 
 export async function POST(req: Request) {
@@ -30,6 +31,9 @@ export async function POST(req: Request) {
       },
     });
 
+    revalidatePath('/');
+    revalidatePath('/artikel');
+    
     return NextResponse.json(article);
   } catch (error: any) {
     return NextResponse.json({ error: error.message }, { status: 500 });
