@@ -1,0 +1,9 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/page": "app/page.js",
+  "/kontak/page": "app/kontak/page.js",
+  "/layanan/web/page": "app/layanan/web/page.js",
+  "/layanan/aplikasi/page": "app/layanan/aplikasi/page.js",
+  "/layanan/iot/page": "app/layanan/iot/page.js",
+  "/portofolio/page": "app/portofolio/page.js"
+}

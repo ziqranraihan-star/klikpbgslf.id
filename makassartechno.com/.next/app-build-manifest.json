@@ -1,0 +1,73 @@
+{
+  "pages": {
+    "/_not-found/page": [
+      "static/chunks/webpack-24aa525506867434.js",
+      "static/chunks/fd9d1056-cf48984c1108c87a.js",
+      "static/chunks/117-c6ee3d5fc4ea1862.js",
+      "static/chunks/main-app-668cb9fbea4f2c0f.js",
+      "static/chunks/app/_not-found/page-41ffdbb4455d3b7e.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-24aa525506867434.js",
+      "static/chunks/fd9d1056-cf48984c1108c87a.js",
+      "static/chunks/117-c6ee3d5fc4ea1862.js",
+      "static/chunks/main-app-668cb9fbea4f2c0f.js",
+      "static/css/82912143e647ba6e.css",
+      "static/chunks/972-fe6ab53755556f79.js",
+      "static/chunks/878-343d62892b195dfb.js",
+      "static/chunks/26-c08a3092140ac00a.js",
+      "static/chunks/app/layout-08793c9a8e2187ad.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-24aa525506867434.js",
+      "static/chunks/fd9d1056-cf48984c1108c87a.js",
+      "static/chunks/117-c6ee3d5fc4ea1862.js",
+      "static/chunks/main-app-668cb9fbea4f2c0f.js",
+      "static/chunks/972-fe6ab53755556f79.js",
+      "static/chunks/878-343d62892b195dfb.js",
+      "static/chunks/26-c08a3092140ac00a.js",
+      "static/chunks/app/page-5df8f1882752629a.js"
+    ],
+    "/kontak/page": [
+      "static/chunks/webpack-24aa525506867434.js",
+      "static/chunks/fd9d1056-cf48984c1108c87a.js",
+      "static/chunks/117-c6ee3d5fc4ea1862.js",
+      "static/chunks/main-app-668cb9fbea4f2c0f.js",
+      "static/chunks/972-fe6ab53755556f79.js",
+      "static/chunks/app/kontak/page-705e9a8c87059ba4.js"
+    ],
+    "/layanan/web/page": [
+      "static/chunks/webpack-24aa525506867434.js",
+      "static/chunks/fd9d1056-cf48984c1108c87a.js",
+      "static/chunks/117-c6ee3d5fc4ea1862.js",
+      "static/chunks/main-app-668cb9fbea4f2c0f.js",
+      "static/chunks/972-fe6ab53755556f79.js",
+      "static/chunks/app/layanan/web/page-eb2b166ac21c43df.js"
+    ],
+    "/layanan/aplikasi/page": [
+      "static/chunks/webpack-24aa525506867434.js",
+      "static/chunks/fd9d1056-cf48984c1108c87a.js",
+      "static/chunks/117-c6ee3d5fc4ea1862.js",
+      "static/chunks/main-app-668cb9fbea4f2c0f.js",
+      "static/chunks/972-fe6ab53755556f79.js",
+      "static/chunks/app/layanan/aplikasi/page-92bfd96a3e6a2a1d.js"
+    ],
+    "/layanan/iot/page": [
+      "static/chunks/webpack-24aa525506867434.js",
+      "static/chunks/fd9d1056-cf48984c1108c87a.js",
+      "static/chunks/117-c6ee3d5fc4ea1862.js",
+      "static/chunks/main-app-668cb9fbea4f2c0f.js",
+      "static/chunks/972-fe6ab53755556f79.js",
+      "static/chunks/app/layanan/iot/page-4c82c45d43c080db.js"
+    ],
+    "/portofolio/page": [
+      "static/chunks/webpack-24aa525506867434.js",
+      "static/chunks/fd9d1056-cf48984c1108c87a.js",
+      "static/chunks/117-c6ee3d5fc4ea1862.js",
+      "static/chunks/main-app-668cb9fbea4f2c0f.js",
+      "static/chunks/972-fe6ab53755556f79.js",
+      "static/chunks/878-343d62892b195dfb.js",
+      "static/chunks/app/portofolio/page-f1012792534b3ae9.js"
+    ]
+  }
+}
