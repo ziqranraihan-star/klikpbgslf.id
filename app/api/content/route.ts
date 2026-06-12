@@ -10,15 +10,18 @@ export async function GET() {
 
     let content = await prisma.siteContent.findMany();
 
-    // Define the logical order of sections as they appear on the landing page
     const order = [
-      'Header',
-      'Hero',
-      'ServicesSection',
-      'ProcessSection',
-      'PricingSection',
-      'FAQSection',
-      'Footer'
+      'hero',
+      'servicesSection',
+      'services',
+      'processSection',
+      'processSteps',
+      'whyUsSection',
+      'whyUsItems',
+      'packagesGrouped',
+      'faqs',
+      'contactSection',
+      'contact'
     ];
 
     content = content.sort((a, b) => {
