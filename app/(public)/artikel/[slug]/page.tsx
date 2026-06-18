@@ -33,7 +33,12 @@ export default async function ArticleDetailPage({ params }: { params: { slug: st
         
         <div className="mb-10">
           <div className="flex flex-wrap items-center gap-4 text-sm font-semibold text-slate-500 mb-4">
-            <span className="flex items-center gap-1.5 text-primary bg-primary/10 px-3 py-1 rounded-full">
+            {article.category && (
+              <span className="flex items-center gap-1.5 bg-primary/10 text-primary px-3 py-1 rounded-full">
+                {article.category}
+              </span>
+            )}
+            <span className="flex items-center gap-1.5 text-slate-500 bg-slate-100 px-3 py-1 rounded-full">
               <Calendar size={14} />
               {new Date(article.createdAt).toLocaleDateString('id-ID', { year: 'numeric', month: 'long', day: 'numeric' })}
             </span>

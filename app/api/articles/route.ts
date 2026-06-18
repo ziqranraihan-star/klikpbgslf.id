@@ -5,7 +5,7 @@ import { prisma } from '../../../lib/prisma';
 
 export async function POST(req: Request) {
   try {
-    const { title, excerpt, content, imageUrl, author, keywords, metaDesc, published } = await req.json();
+    const { title, excerpt, content, imageUrl, category, author, keywords, metaDesc, published } = await req.json();
 
     if (!title || !content) {
       return NextResponse.json({ error: 'Title and content are required' }, { status: 400 });
@@ -24,6 +24,7 @@ export async function POST(req: Request) {
         excerpt,
         content,
         imageUrl,
+        category,
         author,
         keywords,
         metaDesc,

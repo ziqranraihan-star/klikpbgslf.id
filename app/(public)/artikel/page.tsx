@@ -50,7 +50,12 @@ export default async function ArticlesPage() {
                     </div>
                     <div className="p-6 flex flex-col flex-1">
                       <div className="flex flex-wrap items-center gap-3 text-xs font-semibold text-slate-500 mb-3">
-                        <span className="flex items-center gap-1 text-primary">
+                        {article.category && (
+                          <span className="bg-primary/10 text-primary px-2 py-1 rounded-md">
+                            {article.category}
+                          </span>
+                        )}
+                        <span className="flex items-center gap-1 text-slate-400">
                           <Calendar size={12} />
                           {new Date(article.createdAt).toLocaleDateString('id-ID', { year: 'numeric', month: 'short', day: 'numeric' })}
                         </span>

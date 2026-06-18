@@ -21,7 +21,7 @@ export async function PUT(req: Request, { params }: { params: { id: string } }) 
     const session = await getServerSession();
     if (!session) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
 
-    const { title, excerpt, content, imageUrl, author, keywords, metaDesc, published } = await req.json();
+    const { title, excerpt, content, imageUrl, category, author, keywords, metaDesc, published } = await req.json();
 
     const article = await prisma.article.update({
       where: { id: params.id },
@@ -30,6 +30,7 @@ export async function PUT(req: Request, { params }: { params: { id: string } }) 
         excerpt,
         content,
         imageUrl,
+        category,
         author,
         keywords,
         metaDesc,

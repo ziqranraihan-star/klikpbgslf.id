@@ -17,6 +17,7 @@ export default function CreateArticlePage() {
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
   const [excerpt, setExcerpt] = useState('');
+  const [category, setCategory] = useState('');
   const [imageUrl, setImageUrl] = useState('');
   const [author, setAuthor] = useState('');
   const [keywords, setKeywords] = useState('');
@@ -64,6 +65,7 @@ export default function CreateArticlePage() {
           slug,
           content,
           excerpt,
+          category,
           imageUrl,
           author,
           keywords,
@@ -133,6 +135,45 @@ export default function CreateArticlePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
+              <label className="block text-sm font-medium text-slate-700 mb-1">Kategori Artikel</label>
+              <select
+                className="w-full rounded-lg border border-slate-300 px-4 py-2.5 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary bg-white"
+                value={category}
+                onChange={(e) => setCategory(e.target.value)}
+              >
+                <option value="">-- Pilih Kategori --</option>
+                <option value="Analisa Kasus">Analisa Kasus</option>
+                <option value="Arsitektur">Arsitektur</option>
+                <option value="Audit Energi">Audit Energi</option>
+                <option value="AUDIT STRUKTUR">AUDIT STRUKTUR</option>
+                <option value="DED">DED</option>
+                <option value="Manajemen Konstruksi">Manajemen Konstruksi</option>
+                <option value="MEP">MEP</option>
+                <option value="PBG">PBG</option>
+                <option value="PBG & IMB">PBG & IMB</option>
+                <option value="Perencanaan Bangunan">Perencanaan Bangunan</option>
+                <option value="Perijinan dan Undang - undang">Perijinan dan Undang - undang</option>
+                <option value="Perizinan Bangunan">Perizinan Bangunan</option>
+                <option value="Sertifikat Laik Fungsi (SLF)">Sertifikat Laik Fungsi (SLF)</option>
+                <option value="SIMBG">SIMBG</option>
+                <option value="SLO">SLO</option>
+              </select>
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-slate-700 mb-1">Nama Penulis</label>
+              <input
+                type="text"
+                className="w-full rounded-lg border border-slate-300 px-4 py-2.5 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+                value={author}
+                onChange={(e) => setAuthor(e.target.value)}
+                placeholder="Contoh: Admin klikpbgslf.id"
+              />
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
               <label className="block text-sm font-medium text-slate-700 mb-1">Gambar Cover (Upload / URL)</label>
               <div className="space-y-2">
                 <input
@@ -151,17 +192,6 @@ export default function CreateArticlePage() {
                 />
               </div>
               {imageUrl && <img src={imageUrl} alt="Cover Preview" className="mt-3 h-32 w-auto object-cover rounded-lg border" />}
-            </div>
-
-            <div>
-              <label className="block text-sm font-medium text-slate-700 mb-1">Nama Penulis</label>
-              <input
-                type="text"
-                className="w-full rounded-lg border border-slate-300 px-4 py-2.5 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
-                value={author}
-                onChange={(e) => setAuthor(e.target.value)}
-                placeholder="Contoh: Admin klikpbgslf.id"
-              />
             </div>
           </div>
 

@@ -23,6 +23,7 @@ model Article {
   excerpt   String?
   content   String   // Storing HTML from React Quill
   imageUrl  String?
+  category  String?
   author    String?
   keywords  String?
   metaDesc  String?
